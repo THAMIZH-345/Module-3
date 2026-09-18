@@ -1,35 +1,23 @@
-## Loops in Python: Palindrome Number Checker
+# List Operations in Python: Sum of List Items
 
 ## 🎯 Aim
-To write a Python program that checks whether a given number is a **palindrome** using loops.
+To write a Python program that calculates the **sum of all elements** in a list.
 
 ## 🧠 Algorithm
-1. Get input from the user and assign it to a variable `num`.
-2. Assign the value of `num` to a temporary variable `temp`.
-3. Initialize a variable `rev` to 0 (used to store the reversed number).
-4. Use a `while` loop to reverse the digits:
-   - While `temp > 0`:
-     - `rev = (10 * rev) + temp % 10`
-     - `temp = temp // 10`
-5. After the loop, compare `rev` with `num`:
-   - If equal, print that the number is a palindrome.
-   - Else, print that it is not a palindrome.
+1. Define a list of numbers.
+2. Use Python’s built-in `sum()` function to calculate the total.
+3. Print the result.
 
 ## 🧾 Program
+
 ```
-num=int(input())
-rev=0
-temp=num
-while temp>0:
-    rev=(10*rev)+temp%10
-    temp//=10
-if rev==num:
-    print("The given number {} is a Palindrome".format(num))
-else:
-    print("The given number {} is not a palindrome".format(num))
+items=[153,147,124,102]
+print(sum(items))
 ```
+
 ## Output
-![image](https://github.com/user-attachments/assets/406e9033-e5d5-4305-8a28-dc7ddc79226b)
+
+![Screenshot 2025-04-28 221913](https://github.com/user-attachments/assets/99ccf546-9301-41d3-8656-cb243f0e3785)
 
 ## Result
-Thus,the Python program that checks whether a given number is a palindrome using loops is created successfully.
+Thus the program executed successfully.
